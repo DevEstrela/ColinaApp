@@ -1,7 +1,12 @@
+/*  
+    TELA DE CONTROLE DAS PAGINAS EM TAB
+*/
+
 import React from 'react';
 import Feather from 'react-native-vector-icons/Feather'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+//Importação dos componenete criados para telas
 import Satisfacao from '../Satisfacao';
 import TabHome from '../TabHome';
 

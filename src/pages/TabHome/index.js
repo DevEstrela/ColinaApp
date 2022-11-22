@@ -1,3 +1,8 @@
+/*
+ESSA É A PRIMEIRA TELA APÓS DO USUARIO LOGAR NO SISTEMA.
+VAMOS DEFINIR O QUE VAI SER APRESENTADO NESSA TELA
+*/
+
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 

@@ -1,14 +1,20 @@
 import React, {useState, useEffect} from 'react';
 import { View, StyleSheet, Text, TextInput, Image, TouchableOpacity } from 'react-native';
-import firebase from '../../firebase/firebaseConnection'
-import { useNavigation } from '@react-navigation/native';
 
+//Firebase Import
+import firebase from '../../firebase/firebaseConnection'
+//Navegações
+import { useNavigation } from '@react-navigation/native';
+// Animações 
 import * as Animatable from 'react-native-animatable'
 
 export default function SignIn() {
+//Declarando constantes 
   const [nome, setNome] = useState('Bem vindo (a)');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('')
+
+  //Controlar navegações
   const navigation = useNavigation()
 
 
@@ -19,16 +25,20 @@ export default function SignIn() {
   //função para fazer a validação dos dados no firebase e tratar em caso de erro
     async function logar(){
 
+  // Autenticação do login
     await firebase.auth().signInWithEmailAndPassword(email, password)
+  //Se deu certo
     .then ( (value) => {
       alert('Bem vindo');
       navegaHome();
     })
+  //Se der Erro
     .catch ( (error) => {
       alert('OPS ALGO DEU ERRADO');
       return;
     })
 
+  //Zera os campos
     setEmail('')
     setPassword('')
 
@@ -37,7 +47,6 @@ export default function SignIn() {
 
  return (
     <View style={styles.container}>
-
 
         <Animatable.View animation="fadeInLeft" delay={500} style={styles.containerTitulo}>
           <Text style={styles.title}>{nome}</Text>

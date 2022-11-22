@@ -1,3 +1,7 @@
+/* 
+    TELA INICIAL DE APRESENTAÇÃO DO APLICATIVO 
+*/
+
 import React, {useState} from 'react';
 import { View, StyleSheet, Text, Image, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
@@ -6,6 +10,7 @@ import * as Animatable from 'react-native-animatable'
 
 export default function Welcome() {
     const navigation = useNavigation();
+    
  return (
     <View style={styles.container}>
         <View style={styles.containerImg}>

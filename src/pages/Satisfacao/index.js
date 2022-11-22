@@ -1,3 +1,7 @@
+/* TELA ONDE VAMOS COLOCAR O FORMULARIO DE SATISFAÇÃO
+    
+*/
+
 import React from 'react';
 
 import { View, StyleSheet, Text, TextInput, Image, TouchableOpacity } from 'react-native';

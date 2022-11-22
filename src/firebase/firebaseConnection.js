@@ -1,3 +1,7 @@
+/*
+  IMPORTANDO O BANCO DE DADOS FIREBASE
+*/
+
 import firebase from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';

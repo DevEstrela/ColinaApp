@@ -1,9 +1,14 @@
+/*
+    TELA DE CONTROLE DAS PAGINAS EM PILHA DO APP
+*/
+
+//importando navegação em Stack
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
+//importando os componenetes das paginas que serão as rotas
 import Welcome from '../Welcome';
 import SignIn from "../SignIn";
 import Home from '../Home';
-import TabRoutes from "./TabRoutes";
 
 const Stack = createNativeStackNavigator();
 
