@@ -11,10 +11,12 @@ export default function SignIn() {
   const [password, setPassword] = useState('')
   const navigation = useNavigation()
 
+
   function navegaHome(){
     navigation.navigate('Home')
   }
 
+  //função para fazer a validação dos dados no firebase e tratar em caso de erro
     async function logar(){
 
     await firebase.auth().signInWithEmailAndPassword(email, password)
