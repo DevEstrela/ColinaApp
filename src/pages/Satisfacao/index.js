@@ -2,21 +2,50 @@
     
 */
 
-import React from 'react';
-
+import React, { useState } from 'react';
 import { View, StyleSheet, Text, TextInput, Image, TouchableOpacity } from 'react-native';
 
 export default function Satisfacao() {
+
  return (
    <View style={styles.container}>
-        <Text>AQUI VAI SER O FORMULARIO</Text>
+
+      <View style={styles.header}>
+          
+          <Text style={styles.title}> Começar avaliação </Text>
+        
+      </View>
+
+        <View style={styles.form}>
+
+          <Text>Como o agente funerario atendeu você?</Text>
+  
+          <Text>Qual seu nivel de satisfação do serviço?</Text>
+          <Text>Você foi bem atendida pela nossa equipe?</Text>
+          <Text>Como estava a limpeza do ambiente?</Text>
+
+        </View>
    </View>
   );
 }
 const styles = StyleSheet.create({
     container:{
       flex: 1,
-      alignItems: 'center',
-      justifyContent: 'center'
     },
+    title:{
+      color: '#FFF',
+      textAlign: 'center',
+      marginTop: '10%',
+      fontSize: 39,
+      fontWeight: 'bold'
+    },
+    form:{
+      marginTop: '10%',
+      paddingLeft: 80
+      
+    },
+    header:{
+      backgroundColor: '#04248c',
+      height: '18%'
+    }
 })
