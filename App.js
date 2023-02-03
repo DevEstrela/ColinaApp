@@ -18,8 +18,8 @@ export default function App() {
  return (
     <NavigationContainer>
       <StatusBar backgroundColor={"#04248c"} barStyle='light-content'/>
-      <Routes/>
-      {/* <Satisfacao/> */}
+      {/* <Routes/> */}
+      <Satisfacao/>
     </NavigationContainer>
   );
 }
